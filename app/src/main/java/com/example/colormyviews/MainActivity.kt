@@ -21,6 +21,57 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         setListeners()
+
+        binding.pietButton.setOnClickListener(){
+            drawPiet()
+        }
+
+    }
+
+    private fun drawPiet(){
+
+
+        binding.yellowBoxOne.setBackgroundResource(R.color.piet_yellow)
+        binding.blackBoxOne.setBackgroundResource(R.color.piet_black)
+
+        binding.blueBoxOne.setBackgroundResource(R.color.piet_blue)
+        binding.redBoxOne.setBackgroundResource(R.color.piet_red)
+        binding.redBoxTwo.setBackgroundResource(R.color.piet_red)
+        binding.yellowBoxTwo.setBackgroundResource(R.color.piet_yellow)
+
+        binding.yellowBoxThree.setBackgroundResource(R.color.piet_yellow)
+        binding.blueBoxThree.setBackgroundResource(R.color.piet_blue)
+        binding.blueBoxTwo.setBackgroundResource(R.color.piet_blue)
+        binding.redBoxThree.setBackgroundResource(R.color.piet_red)
+        binding.yellowBoxFour.setBackgroundResource(R.color.piet_yellow)
+        binding.blackBoxTwo.setBackgroundResource(R.color.piet_black)
+        binding.redBoxFour.setBackgroundResource(R.color.piet_red)
+        binding.yellowBoxSix.setBackgroundResource(R.color.piet_yellow)
+
+        binding.blueBoxFour.setBackgroundResource(R.color.piet_blue)
+
+        binding.blackBoxThree.setBackgroundResource(R.color.piet_black)
+        binding.blackBoxFour.setBackgroundResource(R.color.piet_black)
+        binding.redBoxFive.setBackgroundResource(R.color.piet_red)
+
+        binding.whiteBoxOne.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxTwo.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxThree.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxFour.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxFive.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxSix.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxSeven.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxEight.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxNine.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxTen.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxEleven.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxTwelve.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxThirteen.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxFourteen.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxFifteen.setBackgroundResource(R.color.piet_white)
+        binding.whiteBoxSixteen.setBackgroundResource(R.color.piet_white)
+
+
     }
 
     private fun setListeners(){
@@ -38,11 +89,16 @@ class MainActivity : AppCompatActivity() {
             binding.redBoxOne, binding.redBoxTwo, binding.yellowBoxTwo, binding.yellowBoxThree, binding.blueBoxThree,
             binding.blueBoxTwo, binding.redBoxThree, binding.yellowBoxFour, binding.blackBoxTwo, binding.redBoxFour,
             binding.yellowBoxSix, binding.blueBoxFour, binding.blackBoxThree, binding.blackBoxFour, binding.redBoxFive,
-            binding.pietButton)
+            binding.pietButton,
+
+            binding.whiteBoxOne, binding.whiteBoxTwo, binding.whiteBoxThree, binding.whiteBoxFour, binding.whiteBoxFive,
+            binding.whiteBoxSix, binding.whiteBoxSeven, binding.whiteBoxEight, binding.whiteBoxNine, binding.whiteBoxTen,
+            binding.whiteBoxEleven, binding.whiteBoxTwelve, binding.whiteBoxThirteen, binding.whiteBoxFourteen,
+            binding.whiteBoxFifteen, binding.whiteBoxSixteen)
 
         for (item in clickableViews){
             item.setOnClickListener(){
-                makeColored(item) //or "it" keyword instead of variable item, works both ways
+                makeColored(item) //or "it" keyword instead of variable item, works both ways (or binding.yellowBoxOne)
             }
         }
 
@@ -83,6 +139,28 @@ class MainActivity : AppCompatActivity() {
             binding.blackBoxThree.id -> view.setBackgroundResource(R.color.piet_black)
             binding.blackBoxFour.id -> view.setBackgroundResource(R.color.piet_black)
             binding.redBoxFive.id -> view.setBackgroundResource(R.color.piet_red)
+
+
+
+
+
+
+                    binding.whiteBoxOne.id -> view.setBackgroundResource(R.color.piet_black)
+                    binding.whiteBoxTwo.id -> view.setBackgroundResource(R.color.piet_blue)
+                    binding.whiteBoxThree.id -> view.setBackgroundResource(R.color.piet_red)
+                    binding.whiteBoxFour.id -> view.setBackgroundResource(R.color.piet_blue)
+                    binding.whiteBoxFive.id -> view.setBackgroundResource(R.color.piet_yellow)
+                    binding.whiteBoxSix.id -> view.setBackgroundResource(R.color.piet_black)
+                    binding.whiteBoxSeven.id -> view.setBackgroundResource(R.color.piet_yellow)
+                    binding.whiteBoxEight.id -> view.setBackgroundResource(R.color.piet_red)
+                    binding.whiteBoxNine.id -> view.setBackgroundResource(R.color.piet_blue)
+                    binding.whiteBoxTen.id -> view.setBackgroundResource(R.color.piet_red)
+                    binding.whiteBoxEleven.id -> view.setBackgroundResource(R.color.piet_red)
+                    binding.whiteBoxTwelve.id -> view.setBackgroundResource(R.color.piet_yellow)
+                    binding.whiteBoxThirteen.id -> view.setBackgroundResource(R.color.piet_blue)
+                    binding.whiteBoxFourteen.id -> view.setBackgroundResource(R.color.piet_black)
+                    binding.whiteBoxFifteen.id -> view.setBackgroundResource(R.color.piet_blue)
+                    binding.whiteBoxSixteen.id -> view.setBackgroundResource(R.color.piet_yellow)
 
 
 

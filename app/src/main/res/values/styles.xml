@@ -2,8 +2,8 @@
 <resources>
 
     <style name="WhiteBox">
-        <item name="android:background">@color/darker_white</item>
-        <item name="android:textColor">@color/darker_white</item>
+        <item name="android:background">@color/piet_white</item>
+        <item name="android:textColor">@color/piet_white</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">@dimen/box_text_size</item>
         <item name="android:textStyle">bold</item>
