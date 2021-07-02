@@ -17,6 +17,8 @@
 
     <color name="piet_yellow">#FFC107</color>
     <color name="piet_black">#000000</color>
+    <color name="piet_red">#B30B0E</color>
+    <color name="piet_blue">#1B0887</color>
 
 
 </resources>
