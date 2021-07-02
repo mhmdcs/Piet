@@ -35,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         //instead of doing the above, you can define a linked list and create a for loop to fill them in shorter lines
 
         val clickableViews: List<View> = listOf(binding.boxOneText, binding.boxTwoText, binding.boxThreeText,
-        binding.boxFourText, binding.boxFiveText)
+        binding.boxFourText, binding.boxFiveText, binding.constraintLayoutColors, binding.redButton,
+        binding.yellowButton, binding.greenButton)
 
         for (item in clickableViews){
             item.setOnClickListener(){
@@ -65,7 +66,11 @@ class MainActivity : AppCompatActivity() {
             binding.boxFourText.id -> view.setBackgroundResource(android.R.color.holo_green_dark)
             binding.boxFiveText.id -> view.setBackgroundResource(android.R.color.holo_green_light)
 
-                else -> view.setBackgroundColor(Color.LTGRAY)
+            binding.redButton.id -> binding.boxThreeText.setBackgroundResource(R.color.my_red)
+            binding.yellowButton.id -> binding.boxFourText.setBackgroundResource(R.color.my_yellow)
+            binding.greenButton.id -> binding.boxFiveText.setBackgroundResource(R.color.my_green)
+
+          //  else -> view.setBackgroundColor(Color.LTGRAY)
 
         }
 
