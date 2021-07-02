@@ -15,4 +15,8 @@
     <color name="my_red">#E54304</color>
     <color name="my_yellow">#FFC107</color>
 
+    <color name="piet_yellow">#FFC107</color>
+    <color name="piet_black">#000000</color>
+
+
 </resources>
